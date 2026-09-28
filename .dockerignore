@@ -1,0 +1,9 @@
+.git
+**/node_modules
+**/target
+**/dist
+**/.checks
+.verification
+.data
+evidence
+.env

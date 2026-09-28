@@ -1,0 +1,37 @@
+PASS 01 Server explicitly reports demo mode
+PASS 02 Unauthenticated request rejected
+PASS 03 Named session identity is server-issued
+PASS 04 Sensitive API responses not cacheable
+PASS 05 Cross-origin write rejected
+PASS 06 Missing or invalid CSRF rejected
+PASS 07 Unsupported features explicitly disabled
+PASS 08 Bootstrap agent is published
+PASS 09 Conversation creation idempotent
+PASS 10 Cross-user conversation access rejected
+PASS 11 HTTP message retry returns same receipt
+PASS 12 Lost response recoverable by client request ID
+PASS 13 Reusing idempotency key for changed body rejected
+PASS 14 Real dispatcher persisted four artifact kinds
+PASS 15 Duplicate POST creates one user message
+PASS 16 Persisted event replay reaches consistent snapshot watermark
+PASS 17 SSE endpoint returns event stream
+PASS 18 SSE replays persisted data after supplied cursor
+PASS 19 Artifact read enforces ownership
+PASS 20 Large table row data excluded from artifact header
+PASS 21 Server-side table pagination creates snapshot
+PASS 22 CSV retains large integer precision and downloads as attachment
+PASS 23 Second turn continues the same persisted conversation
+PASS 24 Side effect remains blocked before approval
+PASS 25 SIGKILL/restart retains exact approval ID
+PASS 26 SIGKILL/restart retains prior conversation and artifacts
+PASS 27 Approval rejects altered parameter hash
+PASS 28 Repeated approval returns same receipt
+PASS 29 Internal ticket tool succeeds only after approval
+PASS 30 Question-specific answer resumes execution
+PASS 31 Cancellation revokes pending approval without executing tool
+PASS 32 Knowledge retrieval returns real uploaded content
+PASS 33 Knowledge retrieval enforces resource ACL
+PASS 34 Non-admin cannot publish capability resources
+PASS 35 Disabled MCP never silently simulates a result
+PASS 36 Logout invalidates server session
+HTTP PASSED 36; real Spring Boot + H2; deterministic DemoRunner, not live AgentScope

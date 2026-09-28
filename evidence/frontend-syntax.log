@@ -1,0 +1,2 @@
+Syntax/transpile checked 12 frontend source files using TypeScript 5.8.3.
+NOT a dependency-aware type check, production build, rendering test or browser verification.

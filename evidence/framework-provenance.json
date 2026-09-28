@@ -1,0 +1,149 @@
+{
+  "source": "Authorized GitHub Actions artifact from NatsumeWeiXia/Project_scarlet",
+  "artifactId": 10757173989,
+  "archiveSha256": "661974eec914bc4d1830863c5b6bef429ce5acd4d801691d90e047cbbb5948cd",
+  "use": "Only genuine third-party dependency JARs extracted; Reimu sources recompiled. Prior Scarlet application and prior tests not used as Reimu validation.",
+  "notBundled": true,
+  "classpath": [
+    {
+      "file": "HikariCP-6.3.2.jar",
+      "sha256": "6d3c1b8dc157f6a8525935cb3a3c56f8b2334a6d5c394552a50533ca3b9236bf"
+    },
+    {
+      "file": "checker-qual-3.49.3.jar",
+      "sha256": "367edbf2fe9f606c1fdb5a8ba6e1c9c27625993e1ff954e3868de70bcc6416b7"
+    },
+    {
+      "file": "h2-2.3.232.jar",
+      "sha256": "8dae62d22db8982c3dcb3826edb9c727c5d302063a67eef7d63d82de401f07d3"
+    },
+    {
+      "file": "jackson-annotations-2.19.2.jar",
+      "sha256": "e516743a316dcf83c572ffc9cb6e8c5e8c134880c8c5155b02f7b34e9c5dc3cf"
+    },
+    {
+      "file": "jackson-core-2.19.2.jar",
+      "sha256": "aa77eaf29293a868c47372194f7c5287d77d9370b04ea25d3fffc1e4904b5880"
+    },
+    {
+      "file": "jackson-databind-2.19.2.jar",
+      "sha256": "0a1bd4e9b0d670e632d40ee8c625ad376233502f03c2f5889baea95d025b47a7"
+    },
+    {
+      "file": "jackson-datatype-jdk8-2.19.2.jar",
+      "sha256": "6055fef10756e8bd1b0e8807aa1d881338c63ca95d59271e1da4922b9a17581e"
+    },
+    {
+      "file": "jackson-datatype-jsr310-2.19.2.jar",
+      "sha256": "9709f43e0fa5625633ee66db6c078fb1e8c7ca02092696ba95ea785dbf0fa6a1"
+    },
+    {
+      "file": "jackson-module-parameter-names-2.19.2.jar",
+      "sha256": "5cafef98759b40a418631e91257930a5e30abc162d9a690c1e365dbbdacdfecb"
+    },
+    {
+      "file": "jakarta.annotation-api-2.1.1.jar",
+      "sha256": "5f65fdaf424eee2b55e1d882ba9bb376be93fb09b37b808be6e22e8851c909fe"
+    },
+    {
+      "file": "jul-to-slf4j-2.0.17.jar",
+      "sha256": "a7afcd23b9cfd1475e55c94f943b808c5922035e7e2c2a5c65a487a4106bc538"
+    },
+    {
+      "file": "log4j-api-2.24.3.jar",
+      "sha256": "5b4a0a0cd0e751ded431c162442bdbdd53328d1f8bb2bae5fc1bbeee0f66d80f"
+    },
+    {
+      "file": "log4j-to-slf4j-2.24.3.jar",
+      "sha256": "c7f2b0c612a4eb05b1587d1c880eb4cf5f4f53850676a8ede8da2b8fabb4f73f"
+    },
+    {
+      "file": "logback-classic-1.5.18.jar",
+      "sha256": "3e1533d0321f8815eef46750aee0111b41554f9a4644c3c4d2d404744b09f60f"
+    },
+    {
+      "file": "logback-core-1.5.18.jar",
+      "sha256": "85139e7b57b464f8e5e36326dd81317648bed199ccc4f98cd42585f8d7571027"
+    },
+    {
+      "file": "micrometer-commons-1.15.3.jar",
+      "sha256": "0dc67ca155ee76470c0c36612e803c81f897b2af808a1f40353658d4434f7914"
+    },
+    {
+      "file": "micrometer-observation-1.15.3.jar",
+      "sha256": "52ccb056ef26fa87dd71a6edabbfbd02b4a4820b6cd37344720e14f9db6ee0ce"
+    },
+    {
+      "file": "postgresql-42.7.7.jar",
+      "sha256": "157963d60ae66d607e09466e8c0cdf8087e9cb20d0159899ffca96bca2528460"
+    },
+    {
+      "file": "slf4j-api-2.0.17.jar",
+      "sha256": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832"
+    },
+    {
+      "file": "snakeyaml-2.4.jar",
+      "sha256": "ef779af5d29a9dde8cc70ce0341f5c6f7735e23edff9685ceaa9d35359b7bb7f"
+    },
+    {
+      "file": "spring-aop-6.2.10.jar",
+      "sha256": "9ddea2c5dacbe8197548c3d321355a0ed7358dd64ebb191637e59d827df10482"
+    },
+    {
+      "file": "spring-beans-6.2.10.jar",
+      "sha256": "d786027a693687d84c6ba9ee1b2f640f4c068bd9c1046990e676c683c30920fc"
+    },
+    {
+      "file": "spring-boot-3.5.5.jar",
+      "sha256": "b6d577b1971c84a2b93416b6f014e4d01dfac72dcd62b97d5dc1c8322b30ebe7"
+    },
+    {
+      "file": "spring-boot-autoconfigure-3.5.5.jar",
+      "sha256": "b12985e62700146973740217a8e010523b2a08879990909b43bd824bd810794d"
+    },
+    {
+      "file": "spring-context-6.2.10.jar",
+      "sha256": "b46e2ff27708a2f85dadfda5cf1c41c9ecd52b3265b272211ce085516c028af9"
+    },
+    {
+      "file": "spring-core-6.2.10.jar",
+      "sha256": "28122d6e4a48eb8b6a0e4e087a55e96e46fb4d5e7d5d2c74dc8051401d8101da"
+    },
+    {
+      "file": "spring-expression-6.2.10.jar",
+      "sha256": "4fb07c59249cfb341208a27c371886c110b55cda2c933e5944ed7e02eabf1828"
+    },
+    {
+      "file": "spring-jcl-6.2.10.jar",
+      "sha256": "71586e08cdc62daa2c6f06dc606a1cc031e32477986a216c272d1a17270b2ade"
+    },
+    {
+      "file": "spring-jdbc-6.2.10.jar",
+      "sha256": "421811b38f9f30243c6720909efd110ceec11c13c523233fa1226e7a89d8411d"
+    },
+    {
+      "file": "spring-tx-6.2.10.jar",
+      "sha256": "637a8475d2be7743bbfde3cffc388a9013301edaa708abd7eda472e61855f7de"
+    },
+    {
+      "file": "spring-web-6.2.10.jar",
+      "sha256": "79b68c5252775e2fb67e945ea8f63d4872dc0d7b3ca35ec2576dc88f7bdb895e"
+    },
+    {
+      "file": "spring-webmvc-6.2.10.jar",
+      "sha256": "cdd2bdb5e5396d5271559c120c2db81162f420fcfff2b09007b9168b8635175d"
+    },
+    {
+      "file": "tomcat-embed-core-10.1.44.jar",
+      "sha256": "8bb726735eb89bcef7a0c088db45428fd874dfdcf1775ab029d1a0d5490e68a0"
+    },
+    {
+      "file": "tomcat-embed-el-10.1.44.jar",
+      "sha256": "8f02930d492d35b6eb987f3c8a2c63285eee739413131fb488668de8c62a4986"
+    },
+    {
+      "file": "tomcat-embed-websocket-10.1.44.jar",
+      "sha256": "bf77886db065491103994df64062f466cba7ab617c1a8c79977ed21b3259ca0f"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+**/target/
+**/node_modules/
+**/dist/
+**/.checks/
+.env
+**/.data/
+.verification/
+**/playwright-report/
+**/test-results/
+evidence/core-classes/
+evidence/core-sources.txt
+server/src/main/resources/static/

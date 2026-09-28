@@ -1,0 +1,2 @@
+COMMAND: javac --release 17 -parameters -encoding UTF-8; genuine Spring/H2 dependencies; core + server only.
+EXIT: 0

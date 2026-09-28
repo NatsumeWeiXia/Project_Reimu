@@ -1,0 +1,6 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"><modelVersion>4.0.0</modelVersion><parent><groupId>io.reimu</groupId><artifactId>reimu-parent</artifactId><version>0.1.0-SNAPSHOT</version></parent><artifactId>reimu-runtime-agentscope</artifactId><dependencies>
+<dependency><groupId>io.reimu</groupId><artifactId>reimu-core</artifactId><version>${project.version}</version></dependency>
+<dependency><groupId>io.agentscope</groupId><artifactId>agentscope-harness</artifactId><version>${agentscope.version}</version></dependency>
+<dependency><groupId>io.agentscope</groupId><artifactId>agentscope-extensions-model-openai</artifactId><version>${agentscope.version}</version></dependency>
+<dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><scope>test</scope></dependency>
+</dependencies></project>

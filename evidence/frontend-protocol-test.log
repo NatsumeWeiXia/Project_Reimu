@@ -1,0 +1,40 @@
+PASS 1 Snapshot is a defensive copy
+PASS 2 Invalid protocol is rejected
+PASS 3 Duplicate message IDs rejected
+PASS 4 Cross-conversation message rejected
+PASS 5 Large ordinal stays a decimal string
+PASS 6 Emoji uses UTF-16 offsets
+PASS 7 Repeated event is not applied twice
+PASS 8 Same cursor with changed payload is rejected
+PASS 9 Duplicate text under a new cursor is idempotent
+PASS 10 Cursor gap rejected without advancing state
+PASS 11 Future text offset rejected
+PASS 12 Conflicting overlapping text rejected
+PASS 13 String offset rejected at event boundary
+PASS 14 Old model attempt cannot append text
+PASS 15 Different stream rejected
+PASS 16 Different workspace rejected
+PASS 17 Permission change forces new snapshot
+PASS 18 Cross-conversation stream cannot contaminate state
+PASS 19 Complete message reconciles streamed text
+PASS 20 Old message revision does not overwrite newer state
+PASS 21 New artifact availability never rewrites old reference
+PASS 22 Unknown required event fails closed
+PASS 23 Older history merges once and sorts big ordinals exactly
+PASS 24 Safe HTTPS URL permitted
+PASS 25 Executable, credential and control URLs denied
+PASS 26 SSE frames independent of every character boundary
+PASS 27 SSE comments do not become messages
+PASS 28 Truncated EOF is discarded
+PASS 29 SSE aggregated frame has bounded size
+PASS 30 Streaming UTF-8 decoder preserves split multibyte characters
+PASS 31 Failed stream parsing cancels network reader
+FRONTEND PROTOCOL PASSED 31; pure TypeScript only, not a React build
+PASS 32 StrictMode setup-cleanup-setup starts a live controller
+PASS 33 Stale startup never opens a second stream
+PASS 34 Closing controller cancels its reader, not a business command
+PASS 35 Unknown send result retains the original pending request
+PASS 36 New send blocked until pending request is resolved
+PASS 37 Retry preserves the same idempotency key
+PASS 38 Old identity response cannot populate a new session
+FRONTEND ALL PASSED 38; protocol/controller only, React build remains separate

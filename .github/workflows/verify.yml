@@ -1,0 +1,54 @@
+name: Reimu Java17 and Workspace Verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+      - name: Build all real dependencies and run unit checks
+        run: bash scripts/build.sh
+      - name: Real Spring HTTP and SIGKILL recovery checks
+        env:
+          REIMU_MODE: demo
+          REIMU_SECURE_COOKIE: 'false'
+          PORT: '8787'
+          REIMU_ORIGIN: http://127.0.0.1:8787
+          DB_URL: jdbc:h2:file:./.verification/ci-http;DB_CLOSE_ON_EXIT=FALSE;WRITE_DELAY=0
+          REIMU_USERS_JSON: '{"alice":{"token":"ci-only-alice-test-key-00000000","admin":true},"bob":{"token":"ci-only-bob-test-key-0000000000","admin":false}}'
+          REIMU_TEST_SERVER_COMMAND: java -jar server/target/reimu-server-0.1.0-SNAPSHOT.jar
+        run: |
+          mkdir -p evidence .verification
+          set -o pipefail
+          python3 scripts/verify-http.py | tee evidence/ci-http-test.log
+      - name: Install Chromium
+        working-directory: frontend
+        run: npx playwright install --with-deps chromium
+      - name: Real UI end-to-end checks
+        working-directory: frontend
+        run: npm run test:e2e
+      - name: Retain evidence, including generated lockfile
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reimu-verification-evidence
+          path: |
+            evidence/
+            **/target/surefire-reports/
+            frontend/package-lock.json
+            frontend/playwright-report/
+            frontend/test-results/
+            server/target/reimu-server-*.jar

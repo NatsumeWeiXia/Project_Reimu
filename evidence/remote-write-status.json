@@ -1,0 +1,12 @@
+{
+  "repository": "NatsumeWeiXia/Project_Reimu",
+  "readSucceeded": true,
+  "initialRepositoryEmpty": true,
+  "writeAttempt": "GitHub.create_file README.md",
+  "resultStatus": 403,
+  "message": "Resource not accessible by integration",
+  "remoteWriteSucceeded": false,
+  "remoteBranchCreated": false,
+  "pullRequestCreated": false,
+  "remoteCIExecuted": false
+}

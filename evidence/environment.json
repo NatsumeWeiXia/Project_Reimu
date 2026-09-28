@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-24",
+  "javaRuntime": "openjdk version \"21.0.11\" 2026-04-21",
+  "javaTarget": "17 (javac --release 17); bytecode major version 61",
+  "actualJava17RuntimeTested": false,
+  "node": "v22.16.0",
+  "typescript": "Version 5.8.3",
+  "mavenExecutable": null,
+  "npmDependenciesInstalled": false,
+  "coreChecksPassed": 41,
+  "realSpringHttpChecksPassed": 36,
+  "frontendProtocolControllerChecksPassed": 38,
+  "reactBuildVerified": false,
+  "reactBrowserVerified": false,
+  "agentscopeModuleCompiled": false,
+  "realModelVerified": false,
+  "realMcpVerified": false,
+  "postgresqlVerified": false
+}
